@@ -45,6 +45,7 @@ nav a {
     }
 .hero .container{
     display: flex;
+    flex-wrap: wrap;
     background-color: #1F2937;
     padding: 10px;
     padding-bottom: 30px;
@@ -58,7 +59,7 @@ nav a {
     display: flex;
     flex-direction: column;
     flex: 1;
-    flex-basis: 400px;
+    flex-basis: 300px;
 }
 
 .hero_main_text {
@@ -86,11 +87,14 @@ button {
 }
 
 .hero_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: gray;
     color: white;
     font-size: 14px;
     height: 200px;
-    flex-basis: 400px;
+    flex-basis: 300px;
     }
     
 .info {}    
@@ -133,7 +137,7 @@ button {
 .quote_box{
     background-color: #e5e7eb;
     margin-top: 10px;
-    padding: 20px;
+    padding: 40px;
 }    
 .quote_box .container{
     display: flex;
@@ -179,7 +183,11 @@ padding: 50px;
 
 .cta .container .cta_right{
     display: flex;
+    flex: 1;
+    max-width: 200px;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }        
 .cta .container .cta_right button{
     font-size: 16px;
@@ -189,4 +197,19 @@ padding: 50px;
     border-radius: 2cap;
     width: 120px;
     padding: 8px;
-    }        
+    }
+    
+.footer {
+    background-color: #1f2937;
+    }
+.footer .container{
+    display: flex;
+    background-color: #1F2937;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    flex: 1;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
